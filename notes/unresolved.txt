@@ -1,0 +1,75 @@
+# Symbols no library, runtime or megatouch-host provides (2026-10-07)
+# megatouch-host loads the game with RTLD_NOW, so each of these must be defined
+# (usually in src/host/loader_services.cpp) before the game will start.
+# symbol | needed by
+NetGlob | dominoes.so
+WhoWeArePlaying | dominoes.so
+Heartbeat_Check(int, int) | dominoes.so
+Heartbeat_WaitForAll(unsigned long, bool) | dominoes.so
+t_i_l() | dominoes.so
+GetMyId() | dominoes.so
+u_m_m_s(char const*, char*, char*, unsigned int) | dominoes.so
+GetMaster() | dominoes.so
+NetGlobals::ProcNetClicks() | dominoes.so
+NetGlobals::NetSpriteUnRegister(NetSprite*, unsigned char) | dominoes.so
+TextSystem::LoadTranslations(xml_gameinfo::GameIds) | dominoes.so
+TextSystem::GetSpriteChannels(char const*, unsigned char**, unsigned char**, int, int, bool, bool, int, float) | dominoes.so
+TextSystem::SetTextDescription(TextDesc const&) | dominoes.so
+Translator::nTranslate(char*, unsigned int, char const*) | dominoes.so
+WorldClass::LoadBmp(char const*, int, float, int, int, bool, bool, Bitmap*) | dominoes.so
+WorldClass::SetBack(char const*, int) | dominoes.so
+WorldClass::PlayMovie(int, unsigned long, void (*)(unsigned char), unsigned char, bool, bool, bool, bool) | dominoes.so
+WorldClass::WorldClass() | dominoes.so
+system_info::Get_Motherboard_Type() | dominoes.so
+HighScoresManager::LowestScore(int) | dominoes.so
+List::Push(Group*) | dominoes.so
+List::Clear(unsigned char) | dominoes.so
+List::List(List*) | dominoes.so
+Books::Credits(xml_gameinfo::GameIds, enums::Span) | dominoes.so
+Books::Instance() | dominoes.so
+ListT<EventO>::UnLinkAndAdvance() | dominoes.so
+ListT<EventO>::ListT(List*) | dominoes.so
+ListT<EventO>::~ListT() | dominoes.so
+USBIO::FoundUSB() | dominoes.so
+Bitmap::TTFtoCData(unsigned char*, unsigned char*, int, int) | dominoes.so
+Bitmap::CreateSmackTextBox(char const*, FontBase*, signed char, unsigned short, unsigned short, bool) | dominoes.so
+Bitmap::GreyBmp() | dominoes.so
+Bitmap::NextAnim() | dominoes.so
+Colour::black | dominoes.so
+Colour::white | dominoes.so
+Sprite::DoNextFrame() | dominoes.so
+Sprite::SpriteClick() | dominoes.so
+Sprite::EffectOutline(int, unsigned char, unsigned char, unsigned char, bool) | dominoes.so
+Sprite::LastEventTime() | dominoes.so
+Sprite::RunDiskAnimThenDelete(char const*, unsigned long, float, unsigned long, bool) | dominoes.so
+Sprite::Move(float, float, float, float, float, float, unsigned long, unsigned long, unsigned char) | dominoes.so
+Sprite::Curve(int, int, int, int, int, int, int, int, int, int, int, int, unsigned long, unsigned long, unsigned char) | dominoes.so
+Sprite::Reset() | dominoes.so
+Sprite::DoDraw() | dominoes.so
+Sprite::Enable(unsigned long) | dominoes.so
+Sprite::FadeIn(unsigned long, unsigned long, int, int) | dominoes.so
+Sprite::SetBmp(Bitmap*, unsigned long) | dominoes.so
+Sprite::Signal(Group::SpriteSignalType) | dominoes.so
+Sprite::Signal(SpriteSignal*) | dominoes.so
+Sprite::Disable(unsigned long, bool) | dominoes.so
+Sprite::FadeOut(unsigned long, unsigned long, int, int) | dominoes.so
+Sprite::Message(Group::SpriteSignalType) | dominoes.so
+Sprite::Message(SpriteSignal*) | dominoes.so
+Sprite::RunAnim(Bitmap*, int, int, int, unsigned long, float, unsigned long, int) | dominoes.so
+Sprite::SetCord(float, float, float, unsigned long) | dominoes.so
+Sprite::SetSize(int, int) | dominoes.so
+Sprite::DoCommand(int) | dominoes.so
+Sprite::Sprite(Bitmap*, unsigned long, Sprite*) | dominoes.so
+Sprite::Sprite(Bitmap*, unsigned long, Sprite*) | dominoes.so
+Sprite::~Sprite() | dominoes.so
+TextDesc::SetFontName(char const*) | dominoes.so
+NetSprite::SendPacket(unsigned char) | dominoes.so
+NetSprite::NetSprite(Bitmap*, unsigned short, unsigned char, unsigned short) | dominoes.so
+NetSprite::~NetSprite() | dominoes.so
+TextUtils::ToUpper(char*) | dominoes.so
+typeinfo for Sprite | dominoes.so
+typeinfo for NetSprite | dominoes.so
+vtable for DOSLinuxWorld | dominoes.so
+clear_bitmap | dominoes.so
+gfx_driver | dominoes.so
+screen | dominoes.so
