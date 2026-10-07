@@ -2,13 +2,7 @@
 # megatouch-host loads the game with RTLD_NOW, so each of these must be defined
 # (usually in src/host/loader_services.cpp) before the game will start.
 # symbol | needed by
-Heartbeat_WaitForAll(unsigned long, bool) | dominoes.so
 t_i_l() | dominoes.so
 NetGlobals::NetSpriteUnRegister(NetSprite*, unsigned char) | dominoes.so
-TextSystem::GetSpriteChannels(char const*, unsigned char**, unsigned char**, int, int, bool, bool, int, float) | dominoes.so
-TextSystem::SetTextDescription(TextDesc const&) | dominoes.so
 HighScoresManager::LowestScore(int) | dominoes.so
 USBIO::FoundUSB() | dominoes.so
-Colour::black | dominoes.so
-Colour::white | dominoes.so
-TextDesc::SetFontName(char const*) | dominoes.so
