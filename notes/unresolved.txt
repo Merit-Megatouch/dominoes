@@ -3,6 +3,4 @@
 # (usually in src/host/loader_services.cpp) before the game will start.
 # symbol | needed by
 t_i_l() | dominoes.so
-NetGlobals::NetSpriteUnRegister(NetSprite*, unsigned char) | dominoes.so
-HighScoresManager::LowestScore(int) | dominoes.so
 USBIO::FoundUSB() | dominoes.so
